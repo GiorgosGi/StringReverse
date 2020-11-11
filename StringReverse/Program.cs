@@ -16,25 +16,24 @@ namespace StringReverse
         }
 
         static string StringReverse(string s)
-        {​​
+        {
             string result = "";
             for (int i = s.Length - 1; i >= 0; i--)
-            {​​
+            {
                 result += s[i];
-            }​​
+            }
             return (result);
-        }​​
+        }
 
         static string StringReverse2(string s)
-        {​​
-                StringBuilder result = new StringBuilder();
-
+        {
+            StringBuilder result = new StringBuilder();
             for (int i = s.Length - 1; i >= 0; i--)
-            {​​
-                    result.Append(s[i]);
-            }​​
-                return (result.ToString());
-        }​​
+            {
+                result.Append(s[i]);
+            }
+            return (result.ToString());
+        }
 
     }
 }
