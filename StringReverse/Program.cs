@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 namespace StringReverse
 {
     class Program
+
+        //Two different ways to reverse a string
     {
         static void Main(string[] args)
         {
             string name = "Giorgos";
             Console.WriteLine(StringReverse(name));
             Console.WriteLine(StringReverse2(name));
+
+            Console.ReadKey();
         }
 
         static string StringReverse(string s)
@@ -34,6 +38,8 @@ namespace StringReverse
             }
             return (result.ToString());
         }
+
+        
 
     }
 }
